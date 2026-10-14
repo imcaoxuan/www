@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的导航门户</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1 id="portal-title"></h1>
+    <p id="portal-subtitle"></p>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="search-input" placeholder="搜索网站名称或描述..." autocomplete="off">
+    </div>
+  </header>
+
+  <nav class="category-nav" id="category-nav"></nav>
+
+  <main id="main-content"></main>
+
+  <footer class="footer">
+    <span>编辑 <code>js/config.js</code> 即可添加新网站</span>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
